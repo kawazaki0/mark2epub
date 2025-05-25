@@ -245,7 +245,7 @@ if __name__ == "__main__":
     ## Reading the JSON file containing the description of the eBook
     ## and compiling the list of relevant Markdown, CSS, and image files
 
-    with open(os.path.join(work_dir,"description.json"),"r") as f:
+    with open(os.path.join(work_dir,"description.json"),"r",encoding="utf-8") as f:
         json_data = json.load(f)
 
     all_md_filenames=[]
